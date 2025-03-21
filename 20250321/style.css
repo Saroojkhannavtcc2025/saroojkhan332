@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    border: 2px solid red;
+    padding: 15px;
+    background-color: pink;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+}
+section
+{
+    border-bottom: 10px solid rebeccapurple;
+    border-radius: 10px;
+}
+img{
+    border-radius: 20px;
+    
+}
+body{
+    background-color: powderblue;
+}
