@@ -1,0 +1,10 @@
+h1{
+    color: aqua;
+}
+span{
+    color: blue;
+}
+p{
+    background-image: url(flyer.jpg);
+    background-attachment: fixed;
+}
