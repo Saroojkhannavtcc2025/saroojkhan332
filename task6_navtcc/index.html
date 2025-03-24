@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TAsk 6 Form</title>
+ 
+    <style>
+        
+        
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 50px;
+            
+        }
+        
+        
+        table{
+            
+            padding: 0%;
+            width: 800px;
+            margin: 0%;  
+            
+            
+            
+        }
+        th{
+            color: black;
+            background-color: pink;
+            font-size: 60px;
+            text-transform: initial;
+            border: 3px solid black;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+        td{
+            text-transform: uppercase;
+            width: 15px;
+            border: 2px solid rgb(119, 13, 119);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        td{
+               margin: 0%;
+               padding: 3%;
+               text-transform: uppercase;
+               
+
+        }
+        label{
+            color: blue;
+            font-size: 20px;
+        }
+        input{
+            color: purple;
+            font-size: 18px;
+            width: 300px;
+            height: 30px;
+     
+        }
+        .checkbox{
+width: 20px;
+        }
+        .radio{
+            width: 20px;
+            height: 20px;
+        }
+        .button{
+            align-items: center;
+        }
+       
+       
+        
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <u><h1>Report Form</h1></u>
+
+    <form action="" method="get">
+    <table>
+        <thead>
+            <th colspan="2">Information Table</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" placeholder="Full name" required>
+                     <p>Enter Your Full Name </p>           
+                    </td>
+
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="Enter@gmail.com" required>
+                    <p>Enter An Internet Your Contact Address </p>    
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="Password" placeholder="Enter Your Password" required>
+                    <p>Enter A code To Identify You </p>
+            
+        </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <input type="text" placeholder="Address" required>
+                    <p>Complete Address </p>
+                </td>
+            </tr>
+           <td>Country</td>
+           <td>
+            <select name="Country"  id="Country">
+                <option value="" disable selected>Select Your Country</option>
+            
+                <option value="">pakistan</option>
+                <option value="">India</option>
+                <option value="">Canada</option>
+                <option value="">London</option>
+                <option value="">Australia</option>
+                <option value="">Germany</option>
+                <option value="">South Africa</option>
+                <option value="">Japan</option>
+
+
+            </select>
+           </td>
+           <tr>
+            <td>Gender</td>
+            <td>
+                <input class="radio" type="radio" name="Gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input class="radio" type="radio" name="Gender" id="Female" value="Female">
+                <label for="Female">Female</label>
+            </td>
+           </tr>
+           <tr>
+            <td>Habbits</td>
+            <td>
+                <input class="checkbox" type="checkbox" id="s">
+                <label for="s">Study
+                </label><br>
+                <input class="checkbox" type="checkbox" id="l">
+                <label for="l">Listing Music
+                </label><br>
+                <input class="checkbox" type="checkbox" id="p">
+                <label for="p">Painting
+                </label><br>
+                <input class="checkbox" type="checkbox" id="s">
+                <label for="s">Savings
+                </label><br>
+                <input class="checkbox" type="checkbox" id="h">
+                <label for="h">Handicraft
+                </label>
+            </td>
+           </tr>
+           <tr>
+            <td>Your Web Site</td>
+            <td>
+                <input type="text" placeholder="https//...">
+                <p>Provide your WebSite Url if Exists <span>(Not Necessary)</span></p>
+            </td>
+        <tr>
+            <td>Other Information About you</td>
+            <td>
+                <textarea name="massage" id="massage" rows="5" cols="25"
+                    placeholder="Type Your text..."></textarea>
+
+            </td>
+            <tr>
+                <td class="button"> <input class="btn" type="submit" value="Send In My Report"> </td>
+                <td class="button">
+                    <input class="btn" type="submit" value="Erase Report Form">
+                </td>
+            </tr>
+
+            
+        </tbody>
+    </table>
+</form>
+    
+</body>
+</html>
