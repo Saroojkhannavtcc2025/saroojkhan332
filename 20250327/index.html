@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+         
+         
+        .navbar{
+            
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+            box-shadow:  rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        }
+        .menu{
+            border: 1px solid;
+        }
+        .img-logo
+        {
+            border-radius: 20%;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            span{
+                margin: 0 15px;
+            }
+            
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            li{
+                margin:  0 5px;
+                transition: 0.5px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                background-color: rgb(212, 17, 50);
+                
+
+                a{
+                  text-decoration: none;
+                  color: rgb(255, 255, 255);
+                }
+            }
+        }
+     
+        li:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+        h2{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .row{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px 0px;
+        }
+
+        .col{
+            border: 1px solid;
+            width: 40%;
+            height: 400px;
+            background-color: rgb(162, 205, 230);
+        }
+
+      .parent-form{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 10px ;
+       
+        .group{
+            width: 100%;
+          
+        }
+      }
+        
+        
+        .image{
+            overflow: hidden;
+            img{
+                transition: 1s;
+            }
+
+        }
+
+        form div{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        margin: 10px 0px;
+      
+
+      }
+        .image:hover{
+            img{
+            transform: scale(1.5);
+            transition: 1.5s;
+            }
+        }
+        .social-icons{
+        text-align: center;
+        }
+       
+
+
+        
+        
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="logo"> 
+            <img class="img-logo" src="pic.jpg" width="100" height="100"  alt=""> 
+            <h2>My Website</h2>
+            
+           
+        </div>
+        
+        <div class="Menu"> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col image">
+                <img src="pic.jpg" width="600px" height="400px" alt="">
+            </div>
+
+    
+    <div class="col parent-foam">
+        <section class="group">
+        <form action="">
+           <center><h2>Login Form</h2></center>
+            <div class="">
+                <label for="e">Email</label>
+                <input type="email" placeholder="Enter Your Email" name="email" id="e" class="form-control">
+            </div>
+            <div class="">
+                <label for="e">Password</label>
+                <input type="password" placeholder="Enter Your Password" name="" id="p">
+
+            </div>
+            <div class="">
+               
+                <input type="submit" value="login" class="btn">
+
+            </div>
+             </form>
+             <hr>
+             <div class="social-icons">
+                <a href="">
+                    <i class="fa-brands fa-facebook"> </i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-google"> </i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"> </i>
+                </a>
+
+             </div>
+             </section>
+
+    </div>
+    </div>
+
+            
+</body>
+</html>
