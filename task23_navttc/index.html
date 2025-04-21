@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task 23</title>
+    <style>
+      .container{
+        border: 2px solid;
+        margin: 50px;
+      }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Calculator</h2>
+
+    <label>First Number</label>
+    <input type="number" id="num1">
+    <br><br>
+  
+    <label>Second Number</label>
+    <input type="number" id="num2">
+    <br><br>
+    <button onclick="add()">Add
+
+    </button>
+    <button onclick="subtract()">Subtract
+
+    </button>
+    <button onclick="multiply()">Multiply
+
+    </button>
+  
+    <h3>Answer: <span id="result">---</span></h3>
+</body>
+<script >
+    function add() {
+    let a = parseFloat(document.getElementById("num1").value);
+    let b = parseFloat(document.getElementById("num2").value);
+    let total = a + b;
+    document.getElementById("result").innerText = total;
+  }
+
+  function subtract() {
+    let a = parseFloat(document.getElementById("num1").value);
+    let b = parseFloat(document.getElementById("num2").value);
+    let total = a - b;
+    document.getElementById("result").innerText = total;
+  }
+
+  function multiply() {
+      let a = parseFloat(document.getElementById("num1").value);
+      let b = parseFloat(document.getElementById("num2").value);
+      let total = a * b;
+     
+    document.getElementById("result").innerText = total;
+  }
+</script>
+</div>
+</html>
