@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 25</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <style>
+       
+        #myContent {
+            display: none;
+            padding: 15px;
+            border: 1px solid gray;
+            margin-top: 10px;
+            background-color: #ee8989;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <button id="showBtn">Click</button>
+
+  
+    <div id="myContent">
+        <p>Hello! How are You</p>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#showBtn").click(function(){
+                $("#myContent").slideDown();
+            });
+        });
+    </script>
+
+</body>
+</html>
